@@ -6,6 +6,41 @@
     box-sizing: border-box;
     background-color: var(--background-color);
     }
+    /* h2,h3 and texts across the site */
+    h2, h3{
+        background-image: linear-gradient(45deg, #782b25 0%, #a23930 0%, #872b20 21%, #d9402f 52%, #61111f 78%, #6a1818 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+        font-family: Lato, sans-serif;
+        font-size: 2rem;
+    }
+    
+    p {
+        color: var(--font-color);
+        font-family: Lato, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    /* buttons main style */
+    button {
+        border-radius: 20px;
+        border-color: #872b20;
+        cursor: pointer;
+        outline: none;
+        font-family: Lato, sans-serif;
+        font-size: 1.5rem;
+        background-image: linear-gradient(45deg, #782b25 0%, #a23930 0%, #872b20 21%, #d9402f 52%, #61111f 78%, #6a1818 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+    
+    }
+    button a {
+        text-decoration: none;
+    }
     
     /* ----------------------------------------------Header, logo and nav bar */
 nav{
@@ -76,4 +111,45 @@ nav{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
     font-family: Lato, sans-serif;
+}
+/* ---------------------------------------About preview */
+.about-preview {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+.about-img {
+    display: flex;
+    justify-content: center;
+}
+.about-img img {
+    height: 80%;
+    width: 80%;
+    background-repeat: no-repeat;
+    position: inherit;
+    justify-content: center;
+    margin: 0px 35px 0px 35px;
+}
+
+.about-content {
+    display: block;
+    position: absolute;
+    margin: 4%;
+}
+.about-content, h2, p {
+    display: initial;
+}
+.about-content, h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.about-content, p {
+    text-transform:none;
+}
+button {
+    width: 10%;
+    height: 16%;
+    text-decoration: none;
 }
