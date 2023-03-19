@@ -63,7 +63,7 @@ ROOT_URLCONF = 'oblivious_restaurant.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,11 +131,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 # STATICFILE_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILE_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/images/'
+
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
@@ -143,3 +144,4 @@ MEDIA_URL = '/images/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILE_DIRS = [os.path.join(BASE_DIR, 'static')]
