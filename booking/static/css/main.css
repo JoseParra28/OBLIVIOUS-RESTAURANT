@@ -49,4 +49,31 @@ nav{
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color:transparent;
     }
-    
+    /* --------------------------------------hero section */
+.main-container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.hero-img img {
+    height: 69vh;
+    width: 49vh;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 30%;
+    top: 7%;
+}
+.main-container h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 30%;
+    margin-left: 22%;
+    background-image: linear-gradient(45deg, #782b25 0%, #a23930 0%, #872b20 21%, #d9402f 52%, #61111f 78%, #6a1818 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-family: Lato, sans-serif;
+}
