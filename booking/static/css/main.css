@@ -290,5 +290,9 @@ button {
     color: var(--font-color) ;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    
+}
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
