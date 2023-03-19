@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from booking.views import main_func
+from booking.views import main_func, experience, contact, book
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_func, name="main_func"),
+    path('experience.html', experience, name='experience_func'),
+    path('contact.html', contact, name='contact_page'),
+    path('book.html', book, name='book_page'),
+    path('main.html', main_func, name="first_func"),
 ]
