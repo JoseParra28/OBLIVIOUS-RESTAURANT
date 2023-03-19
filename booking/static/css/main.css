@@ -186,7 +186,7 @@ button {
     margin: 10px;
     padding: 15px;
     display: block;
-    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.4); */
     border-radius: 4px;
 }
 .experience-container .menu-card .imgBx {
@@ -246,4 +246,49 @@ button {
 }
 .private-din-content, p {
     text-transform:none;
+}
+/* --------------------------------------------footer */
+.footer__container {
+    background-color: var(--background-color);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer__links h2{
+    margin-bottom: 16px;
+    background-color: #8f3731;
+    background-image: linear-gradient(to top, #782b25 0%, #a23930 0%, #872b20 21%, #d9402f 52%, #61111f 78%, #6a1818 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.footer__link-wrap{
+    display: flex;
+
+}
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+.footer__links a {
+    color: var(--font-color) ;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    
 }
