@@ -8,3 +8,4 @@ psycopg2==2.9.5
 psycopg2-binary==2.9.5
 pytz==2022.7.1
 sqlparse==0.4.3
+heroku/7.69.1 linux-x64 node-v14.19.0
