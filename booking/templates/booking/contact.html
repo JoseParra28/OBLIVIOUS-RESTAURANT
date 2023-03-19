@@ -28,6 +28,38 @@
                     </ul>
         </nav>
     </div>
+     <section id="form-section">
+        <h2 class="make-quiery">Make enquiry</h2>
+    
+        <form method="post" action="https://outlook.live.com/mail/0/" class="signup-form">
+            
+            <label for="fname">First Name</label>
+            <input id="fname" class="text-input-form" name="first-name" type="text" required>
+    
+            <label for="lname">Last Name</label>
+            <input id="lname" class="text-input-form" name="last-name" type="text" required>
+    
+            <label for="email">Email Address</label>
+            <input id="email" class="text-input-form"  name="Email-address" type="text" required>
+    
+            <label for="message">Message</label>
+            <input id="message" class="text-input-form"  name="message" type="text" required>
+            
+            
+            <label for="radio">Private dinning</label>
+            <input type="radio" id="radio" name="models-enquiry" value="radio" required>
+            
+            <label for="become">Other quieries</label>
+            <input type="radio" id="become" name="become-enquiry" value="become" required>
+    
+            <button class="join-button" type="submit" value="Send enquiry">submit quiery</button>
+         
+        </form>
+        <div class="gallery">
+            <img src="{% static 'images/private-dining-form.jpg' %}" alt="card-image">
+        </div>
+    
+    </section>
     <footer>
         <div class="logo-footer">
             <img src="{% static 'images/oblivious-logo.jpg' %}" alt="image" class="logo-img" style="width: 138px;">

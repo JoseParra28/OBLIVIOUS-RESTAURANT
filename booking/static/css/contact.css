@@ -1,0 +1,65 @@
+#form-section {
+    clear:both;
+    background-size:cover;
+    background-position: center;
+    overflow:hidden;
+    justify-content: center;
+    display: flex;
+}
+
+.signup-form {
+    background-color: rgba(23, 21, 21, 0.1);
+    backdrop-filter: blur(15px);
+    max-width: 580px;
+    position: absolute;
+    padding: 12px;
+    font-size: 25px;
+    top: 20%;
+    left: 30%;
+}
+
+.make-quiery {
+    position: absolute;
+    left: 35%;
+    top: 13%;
+    border-bottom: #61111f solid 1px;
+}
+
+.text-input-form {
+    background: transparent;
+    color: whitesmoke;
+    font-family: Lato, sans-serif ;
+    width: 97%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #3a3a3a;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+#message {
+    height: 100px;
+    width: 97%;
+}
+
+.text-input-form:hover {
+    border-color:#872b20;
+    background-color: rgb(121, 44, 44);
+    opacity: .9;
+
+}
+
+label {
+    font-family: Lato, sans-serif;
+    background-image: linear-gradient(45deg, #782b25 0%, #a23930 0%, #872b20 21%, #d9402f 52%, #61111f 78%, #6a1818 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-family: Lato, sans-serif;
+
+}
+.gallery img {
+    height: 95vh;
+    background-repeat: no-repeat;
+}
