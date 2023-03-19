@@ -4,11 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    body{
     background-color: var(--background-color);
     }
+    
     /* ----------------------------------------------Header, logo and nav bar */
 nav{
     display: flex;
@@ -19,6 +17,9 @@ nav{
     z-index: 111;
     background-color:var(--background-color); 
     
+    }
+    .logo {
+        position: relative;
     }
     
     .nav-items {
