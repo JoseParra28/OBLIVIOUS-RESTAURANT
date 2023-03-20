@@ -12,6 +12,7 @@ class Booking_list(ListView):
     model = Booking
 
 
+
 def main_func(request):
     return render(request, "booking/main.html")
 
@@ -35,10 +36,3 @@ def book(request):
 
 
 
-    # def book(request):
-    # submit_booking = Booking.objects.all()
-    # context = {
-    #     'submit_booking': submit_booking
-    # }
-    # print(submit_booking)
-    # return render(request, "booking/book.html", context)

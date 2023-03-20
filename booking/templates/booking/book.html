@@ -29,7 +29,33 @@
         </nav>
     </div>
 
-    {{ submit_booking }}
+    <!-- {{ submit_booking }} -->
+    {% block content %}
+
+    
+    <div class="booking-tittle">
+        <h2 class="tittle">
+            Book a table
+        </h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        {% for Booking in submit_booking %}
+                        <div class="col-md-6">
+                        <h2>
+                         Table number: {{ Booking.table }}, on {{ Booking.arrival_time }}
+                        </h2>
+                    </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+       {% endblock %}
 
 
     <footer>
