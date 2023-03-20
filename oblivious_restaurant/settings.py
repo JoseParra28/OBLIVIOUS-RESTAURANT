@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import booking
+
 # import dj_database_url
 # if os.path.isfile('env.py'):
 #     import env
@@ -45,8 +46,7 @@ INSTALLED_APPS = [
     # 'cloudinary_storage',
     'django.contrib.staticfiles',
     # 'cloudinary'
-    'booking'
-    'booking.booking_functions',
+    'booking',
 ]
 
 MIDDLEWARE = [

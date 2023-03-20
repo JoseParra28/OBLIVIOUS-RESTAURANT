@@ -3,6 +3,7 @@ from django.conf import settings
 
 
 
+
 class Table(models.Model):
     TABLE_CATEGORIES = (
         ('TWO', 'TWO'),
