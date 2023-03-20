@@ -1,6 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.generic import ListView
+from .models import Table, Booking
 
+
+class Table_list(ListView):
+    model = Table
+
+
+class Booking_list(ListView):
+    model = Booking
 
 
 def main_func(request):
@@ -16,4 +25,20 @@ def contact(request):
 
 
 def book(request):
-    return render(request, "booking/book.html")
+    submit_booking = Booking.objects.all()
+    context = {
+        'submit_booking': submit_booking
+    }
+    print(submit_booking)
+    return render(request, "booking/book.html", context)
+
+
+
+
+    # def book(request):
+    # submit_booking = Booking.objects.all()
+    # context = {
+    #     'submit_booking': submit_booking
+    # }
+    # print(submit_booking)
+    # return render(request, "booking/book.html", context)
