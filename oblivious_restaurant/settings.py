@@ -17,13 +17,19 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
+from cloudinary.uploader import upload
+from cloudinary.utils import cloudinary_url
+
+
+
+
 # import dj_database_url
 # if os.path.isfile('env.py'):
 #     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,9 +39,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['oblivious.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['test-restaurant22.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -46,9 +52,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'cloudinary_storage',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
-    # 'cloudinary'
+    'cloudinary'
     'booking',
 ]
 
@@ -67,7 +73,7 @@ ROOT_URLCONF = 'oblivious_restaurant.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,6 +144,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_URL = '/media/'
 MEDIA_URL = '/images/'
 STATICFILE_DIRS = [os.path.join(BASE_DIR, 'static')]
 
